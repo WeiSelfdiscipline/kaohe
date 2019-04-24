@@ -1,15 +1,72 @@
-var li_1=document.getElementById("li-1");
-var li_2=document.getElementById("li-2");
-var nav2=document.getElementById("nav2");
-var nav3=document.getElementById("nav3");
-li_1.style.color="red";
-function hid(a,b,c){
-if(b.style.display=="none"){
-    a.onclick=function clear(){
-        b.style.display="block";
-        c.style.display="none";
+window.onload=function(){
+    var li_1=document.getElementById("li1");
+    var li_2=document.getElementById("li2");
+    var li_3=document.getElementById("li3");
+    var li_4=document.getElementById("li4");
+    
+
+    var nav2=document.getElementById("nav2");
+    var nav3=document.getElementById("nav3");
+    var nav4=document.getElementById("nav4");
+    var nav5=document.getElementById("nav5");
+
+    var li_1_img=document.getElementById("li1-img");
+    var li_2_img=document.getElementById("li2_img")；
+    var hw_img=document.getElementById("hw_img");
+    var hw2_img=document.getElementById("hw2_img");
+    
+
+
+    li_1.onclick=function()
+    {
+        if(nav2.style.display=="none")
+        {
+        nav2.style.display="block";
+        nav3.style.display="none";
+        li_1_img.src="images/向上箭头.png";
+        }
+        else
+        {
+            nav2.style.display="none";
+            li_1_img.src="images/向上箭头 (1).png";
+        }
     }
+    
+    li_2.onclick=function()
+    {
+      if(nav3.style.display=="none")
+        {
+        nav3.style.display="block";
+        nav2.style.display="none";
+        li_2_img.src="images/向上箭头.png";
+        }
+        else
+        {
+            nav3.style.display="none";
+            li_2_img.src="images/向上箭头 (1).png";
+        }      
+    }
+
+    li_3.onclick=function()
+    {
+        if(nav4.style.display=="none")
+        {
+            nav4.style.display="block";
+            nav5.style.display="none";
+        }
+    }
+    
+    li_4.onmouseover=function()
+    {
+        if(nav5.style.display=="none")
+        {
+            nav5.style.display="block"; 
+            nav4.style.display="none";
+        }
+    }
+
 }
-}
-hid(li_1,nav2,nav3);
-hid(li_1,nav2,nav3);
+
+
+ 
+
