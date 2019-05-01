@@ -15,12 +15,6 @@ window.onload=function(){
     var hw_img=document.getElementById("hw_img");
     var hw2_img=document.getElementById("hw2_img");
 
-    var wheel = document.getElementById('wheel');
-    var wrap = document.getElementById('wrap');
-    var prev = document.getElementById('prev');
-    var next = document.getElementById('next');
-    var index = 1;
-    var timer;
     li_1.onclick=function()
     {
         if(nav2.style.display=="none")
@@ -51,9 +45,9 @@ window.onload=function(){
         } 
     }
 
-    li_3.onmouseover=function()
+    li_3.onclick=function()
     {
-        
+       alert("ds")
             nav4.style.display="block";
             nav5.style.display="none";
             hw_img.src="images/向下 (1).png";
@@ -62,20 +56,22 @@ window.onload=function(){
         nav4.style.display="none";
          hw_img.src="images/向下.png";
     }
-    
+
     li_4.onmouseover=function()
     {
-        
+
             nav5.style.display="block";
             nav4.style.display="none";
             hw2_img.src="images/向下 (1).png";
     }
-    
+
     li_4.onmouseout=function()
     {
         nav5.style.display="none";
          hw2_img.src="images/向下.png";
     }
+
+
 }
 
 
